@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Algorithm Performance</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style type="text/css">
+      p { text-align: left; }
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Algorithm Performance</h1>
+          <a href="#">link to heroku</a>
+        </section>
+        <section>
+          <section>
+            <h1>Big O</h1>
+            <a href="https://en.wikipedia.org/wiki/Big_O_notation">Wikipedia</a>
+            <blockquote cite="https://en.wikipedia.org/wiki/Big_O_notation">
+						&ldquo;In computer science, big O notation is used to classify algorithms according to how their running time or space requirements grow as the input size grows.&rdquo;
+					  </blockquote>
+          </section>
+          <section>
+            <h1>Big O</h1>
+            <a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation">Khan Academy</a>
+            <blockquote cite="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation">
+            &ldquo;We use big-Θ notation to asymptotically bound the growth of a running time to within constant factors above and below. Sometimes we want to bound from only above.&rdquo;
+            </blockquote>
+            <p> <small> The term asymptotic means approaching a value or curve arbitrarily closely (i.e., as some sort of limit is taken).</small> </p>
+          </section>
+          <section>
+            <h1>Big O Graphing</h1>
+            <a href="https://www.desmos.com/calculator">Calculator</a>
+          </section>
+          <section>
+            <h1>O(1)</h1>
+            <p>Access the middle cell in an array.</p>
+            <p>No matter what the size of the array the time is always constant to access one cell.</p>
+          </section>
+          <section>
+            <h1>O(n)</h1>
+            <p>Return the average of the cells if an array of numbers.</p>
+            <p>Access all n cells of the array.</p>
+          </section>
+          <section>
+            <h1>O(log n)</h1>
+            <p>Best case O(1) and worst case O(log n)</p>
+            <p>Binary search</p>
+          </section>
+          <section>
+            <h1>O(n<sup>2</sup>)</h1>
+            <p>Best case O(n) and worst case O(n<sup>2</sup>)</p>
+            <p>Bubble sort</p>
+          </section>
+        </section>
+        <section>
+          <h1>Types</h1>
+          <p>Processing (Big O)</p>
+          <p class="fragment">Stack</p>
+          <p class="fragment">Memory</p>
+        </section>
+        <section>Stack Memory</section>
+        <section>Heap Memory</section>
+        <section>
+          <h1>Resources</h1>
+          <p>Download as PDF</p>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

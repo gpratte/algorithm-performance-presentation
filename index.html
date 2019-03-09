@@ -34,9 +34,11 @@
         </section>
         <section>
           <h1>Gil Pratte</h1>
-          <a href="#">gilpratte.com</a>
-          <a href="#">github</a>
-          <a href="#">blog</a>
+          <a href="http://gilpratte.com">http://gilpratte.com</a>
+          <br>
+          <a href="https://github.com/gpratte">https://github.com/gpratte</a>
+          <br>
+          <a href="http://full-stack-software.info">http://full-stack-software.info</a>
         </section>
         <section>
           <h1>Quote</h1>
@@ -61,8 +63,28 @@
         </section>
 
         <section>
+          <h1>Math is a four letter word</h1>
+          <p>This presentation will barely touch on the math to calculate an
+          algorithm's performance.</p>
+          <p>See <a href="https://en.wikipedia.org/wiki/Big_O_notation">Wikipedia</a> and its references for a rigorous definition.
+          </p>
+          <aside class="notes">
+            In my data structures call I remember using L'Hopital's rule to compare which
+            function grew faster.
+          </aside>
+        </section>
+
+        <section>
           <h1>Big O Performance</h1>
           <a href="https://www.desmos.com/calculator">Calculator</a>
+          <aside class="notes">
+            <ul>
+              <li>y=1</li>
+              <li>y=log(x)</li>
+              <li>y=x</li>
+              <li>y=x*x</li>
+            </ul>
+          </aside>
         </section>
         <section>
           <h1>O(1)</h1>
@@ -70,14 +92,14 @@
           <p>No matter what the size of the array the time is always constant to access one cell.</p>
         </section>
         <section>
-          <h1>O(n)</h1>
-          <p>Return the average of the cells if an array of numbers.</p>
-          <p>Access all n cells of the array.</p>
-        </section>
-        <section>
           <h1>O(log n)</h1>
           <p>Binary search.</p>
           <p>Best case O(1) and worst case O(log n).</p>
+        </section>
+        <section>
+          <h1>O(n)</h1>
+          <p>Return the average of the cells if an array of numbers.</p>
+          <p>Access all n cells of the array.</p>
         </section>
         <section>
           <h1>O(n<sup>2</sup>)</h1>
@@ -154,7 +176,7 @@
 
         <section>
           <h1>Java Quicksort</h1>
-          <a href="http://hg.openjdk.java.net/jdk8u/jdk8u/jdk/file/be44bff34df4/src/share/classes/java/util/Arrays.java">Source code</a>
+          <a href="https://github.com/frohoff/jdk8u-dev-jdk/blob/master/src/share/classes/java/util/DualPivotQuicksort.java">Source code</a>
           <pre>public static void sort(int[] a) {
   DualPivotQuicksort.sort(a, 0, a.length - 1, null, 0, 0);
 }</pre>
@@ -211,7 +233,7 @@ class Logger {
           It can result in excessive garbage collection.</p>
           <p>Examples of wasting memory are
             <ul>
-              <li>In Java creating multiple objects when a singleton would do</li>
+              <li>In Java creating many objects when a singleton would do</li>
               <li>String concatenation</li>
             </ul>
           </p>
@@ -225,10 +247,10 @@ class Logger {
               <br>Note that Heroku may take up to a minute (or more) to load the website
             </li>
           <li>GitHub
-            <br> <a href="https://github.com/gpratte/algorithm-performance-presentation.git">https://github.com/gpratte/algorithm-performance-presentation.git</a>
+            <br>Clone <a href="https://github.com/gpratte/algorithm-performance-presentation.git">https://github.com/gpratte/algorithm-performance-presentation.git</a>. and then open index.html in a browser.
           </li>
           <li>PDF
-            <br> <a href="#"></a>
+            <br> <a href="https://github.com/gpratte/algorithm-performance-presentation/blob/master/pdf/algorithm-performance.pdf">PDF</a>
           </li>
         </ul>
         </section>
